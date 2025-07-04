@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cathair Mac an Bheatha | UX Designer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    .project {
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .project img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #eee;
+      margin-top: 3rem;
+    }
+    iframe, video {
+      width: 100%;
+      height: auto;
+      border: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cathair Mac an Bheatha</h1>
+    <p>UX Designer | Front-end Developer | 3D Design Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a UX designer and computer science student at Heriot-Watt University with a passion for creating user-friendly, accessible digital experiences. My work combines design thinking with technical skills — from wireframing and prototyping to front-end development and 3D design.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Campus Induction App</h3>
+      <p><strong>Tools:</strong> SwiftUI, ARKit, MapKit, Figma, Adobe XD, Notion</p>
+      <p><strong>Role:</strong> UX Designer, Developer, Researcher</p>
+      <p><strong>Overview:</strong> A gamified iOS app to help new students explore Heriot-Watt’s campus. The app uses augmented reality challenges to engage users while teaching them about key locations.</p>
+      <p><strong>Problem:</strong> New students often find it difficult to navigate campus and access important information during induction week. My goal was to make the process more engaging and intuitive using mobile tech.</p>
+      <p><strong>Design Process:</strong> I began with user interviews to understand student pain points, then created personas and journey maps. I wireframed key screens in Figma and built interactive prototypes to test with users. Based on feedback, I refined the onboarding flow and challenge design.</p>
+      <p><strong>Outcome:</strong> The final app featured AR waypoints, an onboarding avatar, and interactive mini-games. I created a visual poster to present the project and included accessibility features such as high-contrast UI and clear instructions.</p>
+      <div style="text-align: center;">
+        <img src="images/DissertationPosterDraft.png" alt="Campus Induction App Poster" style="max-width: 100%; height: auto; border-radius: 8px;">
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Chrono Crypt (Team Project)</h3>
+      <p><a href="https://nusnus.itch.io/chrono-crypt" target="_blank">Play on itch.io ↗</a></p>
+      <p><strong>Tools:</strong> Unity, C#, Blender</p>
+      <p><strong>Role:</strong> UX design support, level & UI design, playtesting</p>
+      <p><strong>Overview:</strong> A time-rewind dungeon crawler with three levels and a boss fight. Designed for speedrunning and competitive play, the game challenges users to navigate enemies, solve traversal puzzles, and use a chronos-cursed amulet to rewind time.</p>
+      <p><strong>Gameplay Mechanics:</strong></p>
+      <ul>
+        <li>Time-rewind ability to avoid hazards and retry sections</li>
+        <li>Wall-jumping and sliding for parkour-style movement</li>
+        <li>High-score tracking encourages iterative improvement</li>
+        <li>Low-poly aesthetic with CRT overlay for atmosphere</li>
+      </ul>
+      <p><strong>UX Contributions:</strong></p>
+      <ul>
+        <li>Designed HUD and menu layouts for clarity during fast-paced play</li>
+        <li>Performed iterative playtesting with peers, improved checkpoint timing and visual cues</li>
+        <li>Optimised difficulty progression and feedback loops to enhance pacing</li>
+      </ul>
+      <p><strong>Outcome:</strong> Successfully shipped a fully playable Windows build with polished UX, intuitive rewind mechanics, and trackable performance scores. Reviewed positively for responsive controls and design clarity.</p>
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" allowfullscreen></iframe>
+    </div>
+
+    <div class="project">
+      <h3>Life on Mars (3D Graphics & Animation)</h3>
+      <p><strong>Tools:</strong> Blender, Unreal Engine, WebGPU</p>
+      <p><strong>Role:</strong> 3D artist and animator</p>
+      <p><strong>Overview:</strong> A team project visualising a fictional Mars colony. We created and textured models including a lander, drone, astronaut helmet, and habitat domes. These were rendered in Unreal and animated in a short cinematic sequence before being deployed interactively via WebGPU.</p>
+      <p><strong>Highlights:</strong></p>
+      <ul>
+        <li>Detailed modeling of NASA-inspired props and Mars terrain</li>
+        <li>Animation and scene composition using Unreal Engine’s sequencer</li>
+        <li>High-quality texturing and lighting for realism</li>
+      </ul>
+      
+      <div style="text-align: center;">
+        <img src="images/dronefinal.png" alt="Mars Drone Render">
+        <img src="images/helmetfinal.png" alt="Astronaut Helmet Render">
+        <img src="images/rocketfinal.png" alt="Rocket on Mars Render">
+      </div>
+      <video controls>
+        <source src="images/LifeOnMars.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn: <a href="#">YourLinkedInProfile</a></p>
+    <p>GitHub: <a href="#">YourGitHub</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cathair Mac an Bheatha</p>
+  </footer>
+</body>
+</html>
