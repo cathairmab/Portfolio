@@ -41,7 +41,7 @@ export default function Hero() {
           Hi, I'm Cathaír Rua<br /> Mac an Bheatha
         </h1>
         <p className="text-xl md:text-2xl">
-          App Developer &nbsp;|&nbsp; UX Designer &nbsp;|&nbsp; Dreamer
+          Full Stack Web Developer &nbsp;|&nbsp; Swift Developer &nbsp;|&nbsp; Software Engineer
         </p>
       </div>
     </section>
