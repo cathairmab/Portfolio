@@ -27,7 +27,7 @@ export default function Hero() {
     >
       {/* Threads background and foreground content go here */}
       {/* Threads background full-screen */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-neutral-800">
         <Threads
         amplitude={1}
         distance={0}

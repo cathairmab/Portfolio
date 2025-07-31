@@ -5,6 +5,7 @@ import {
   SiTailwindcss,
   SiSwift,
   SiUnity,
+  SiVite,
   //SiTouchdesigner,
   SiFigma,
   SiGithub,
@@ -43,7 +44,7 @@ export default function About() {
             <IconTile icon={SiTailwindcss} label="Tailwind" />
             <IconTile icon={SiSwift} label="Swift" />
             <IconTile icon={SiUnity} label="Unity" />
-            
+            <IconTile icon={SiVite} label="Vite" />
             <IconTile icon={SiFigma} label="Figma" />
             <IconTile icon={SiGithub} label="GitHub" />
           </div>
