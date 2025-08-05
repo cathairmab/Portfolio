@@ -12,28 +12,35 @@ const projects = [
     description:
       "Gamified mobile app that guides students around campus with AR challenges and location-based tasks.",
     tech: ["SwiftUI", "MapKit", "ARKit", "Supabase"],
-    link: "#",
+    link: "https://github.com/cathairmab/Campus-Induction-App",
   },
   {
+    title: "Chronocrypt",
+    description:
+      "Experimental dungeon game where time manipulation is the main mechanic, affecting gameplay and scoring.",
+    tech: ["Unity", "C#", "Custom Time System", "Puzzle Design"],
+    link: "https://nusnus.itch.io/chrono-crypt",
+  },
+  {
+    title: "This Webpage!",
+    description: "This is a test project to see how the carousel handles overflow.",
+    tech: ["React", "TypeScript", "Vite", "Vercel", "Tailwind"],
+    link: "#",
+  },
+    {
     title: "Sheep Herding Game",
     description:
       "3D first-person game where you control a dog to herd sheep into a pen while avoiding a ragdoll-triggering fox.",
     tech: ["Unity", "C#", "Custom Flocking AI", "Ragdoll Physics"],
-    link: "#",
+    link: "null",
   },
-  {
-    title: "Wizard Time Game",
+    {
+    title: "Synergazia",
     description:
-      "Experimental dungeon game where time manipulation is the main mechanic, affecting gameplay and scoring.",
-    tech: ["Unity", "C#", "Custom Time System", "Puzzle Design"],
-    link: "#",
-  },
-  {
-    title: "Filler Project",
-    description: "This is a test project to see how the carousel handles overflow.",
-    tech: ["HTML", "CSS", "JS"],
-    link: "#",
-  },
+      "A 3rd year group project full stack web application with file sharing, messaging and video calling.",
+    tech: ["React", "Next.js", "Microsoft Azure", "MySQL"],
+    link: "null",
+    }
 ];
 
 const getRotationClass = (index: number) => {
@@ -96,14 +103,20 @@ const Projects = () => {
                         ))}
                       </div>
                     </div>
-                      <a
-                        href={project.link}
-                        className="block w-full text-center mt-2 text-sm font-bold bg-black text-yellow-300 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition-colors duration-200"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        VIEW PROJECT
-                      </a>
+                      {project.link ? (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block px-4 py-2 mt-4 text-sm font-semibold text-white bg-black rounded hover:bg-gray-800 transition"
+                        >
+                          View Code
+                        </a>
+                      ) : (
+                        <span className="inline-block px-4 py-2 mt-4 text-sm font-semibold text-black bg-yellow-200 border border-black rounded cursor-default">
+                          Code available upon request
+                        </span>
+                      )}
                   </div>
 
                 </div>
