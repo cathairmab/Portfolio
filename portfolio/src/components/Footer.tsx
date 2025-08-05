@@ -18,7 +18,6 @@ const Footer = () => {
             LinkedIn
           </a>
           <a
-            href="cathairmab@gmail.com"
             className="hover:underline hover:text-yellow-400 transition"
           >
             cathairmab@gmail.com
