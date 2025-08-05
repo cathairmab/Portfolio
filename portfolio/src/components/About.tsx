@@ -6,11 +6,11 @@ const FlipCard = ({ frontText, backItems }: { frontText: React.ReactNode; backIt
 
   return (
     <div
-      className="w-full max-w-md perspective"
+      className="w-full max-w-xs sm:max-w-sm perspective mx-auto"
       onMouseEnter={() => setFlipped(true)}
       onMouseLeave={() => setFlipped(false)}
     >
-      <div className="relative w-full min-h-[6rem]">
+      <div className="relative w-full min-h-[6rem] overflow-hidden">
         <div
           className={`absolute inset-0 transition-transform duration-700 transform-style-preserve-3d ${
             flipped ? "rotate-y-180" : ""
@@ -48,7 +48,7 @@ const About = () => {
 
       <div className="max-w-6xl mx-auto">
         {/* Centered Heading */}
-        <div className="inline-block border-7 bg-yellow-500 border-black px-4 py-2 mb-12 -rotate-6 mx-auto">
+        <div className="inline-block border-7 bg-yellow-500 border-black px-4 py-2 mb-12 -rotate-6 mx-auto max-w-full overflow-hidden">
           <h2 className="text-4xl font-['Rubik_Mono_One'] tracking-wider">About Me</h2>
         </div>
 
