@@ -20,7 +20,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/YOUR-USERNAME"
+            href="https://www.linkedin.com/in/cathair-mac-an-bheatha-4a6953372/"
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-black bg-yellow-100 hover:bg-yellow-300 transition-colors rounded-xl p-6 shadow-[6px_6px_0px_0px_black] flex flex-col gap-2 items-start"
@@ -32,7 +32,7 @@ const Contact = () => {
 
           {/* GitHub */}
           <a
-            href="https://github.com/YOUR-GITHUB"
+            href="https://github.com/cathairmab"
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-black bg-yellow-100 hover:bg-yellow-300 transition-colors rounded-xl p-6 shadow-[6px_6px_0px_0px_black] flex flex-col gap-2 items-start"
@@ -44,7 +44,7 @@ const Contact = () => {
 
           {/* Email */}
           <a
-            href="mailto:your@email.com"
+            href="mailto:cathairmab@gmail.com"
             className="border-2 border-black bg-yellow-100 hover:bg-yellow-300 transition-colors rounded-xl p-6 shadow-[6px_6px_0px_0px_black] flex flex-col gap-2 items-start"
           >
             <Mail size={24} />

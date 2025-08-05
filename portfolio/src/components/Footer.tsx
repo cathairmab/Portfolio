@@ -6,22 +6,22 @@ const Footer = () => {
 
         <div className="flex gap-4 text-sm">
           <a
-            href="#"
+            href="https://github.com/cathairmab"
             className="hover:underline hover:text-yellow-400 transition"
           >
             GitHub
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/cathair-mac-an-bheatha-4a6953372/"
             className="hover:underline hover:text-yellow-400 transition"
           >
             LinkedIn
           </a>
           <a
-            href="#"
+            href="cathairmab@gmail.com"
             className="hover:underline hover:text-yellow-400 transition"
           >
-            Contact
+            cathairmab@gmail.com
           </a>
         </div>
       </div>
