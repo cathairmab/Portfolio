@@ -25,21 +25,21 @@ const projects = [
     title: "This Webpage!",
     description: "This is a test project to see how the carousel handles overflow.",
     tech: ["React", "TypeScript", "Vite", "Vercel", "Tailwind"],
-    link: "#",
+    link: "https://github.com/cathairmab/Portfolio",
   },
     {
     title: "Sheep Herding Game",
     description:
       "3D first-person game where you control a dog to herd sheep into a pen while avoiding a ragdoll-triggering fox.",
     tech: ["Unity", "C#", "Custom Flocking AI", "Ragdoll Physics"],
-    link: "null",
+    link: null,
   },
     {
     title: "Synergazia",
     description:
       "A 3rd year group project full stack web application with file sharing, messaging and video calling.",
     tech: ["React", "Next.js", "Microsoft Azure", "MySQL"],
-    link: "null",
+    link: null,
     }
 ];
 
@@ -103,20 +103,20 @@ const Projects = () => {
                         ))}
                       </div>
                     </div>
-                      {project.link ? (
-                        <a
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-block px-4 py-2 mt-4 text-sm font-semibold text-white bg-black rounded hover:bg-gray-800 transition"
-                        >
-                          View Code
-                        </a>
-                      ) : (
-                        <span className="inline-block px-4 py-2 mt-4 text-sm font-semibold text-black bg-yellow-200 border border-black rounded cursor-default">
-                          Code available upon request
-                        </span>
-                      )}
+                    {project.link ? (
+                      <a
+                        href={project.link}
+                        className="block w-full text-center mt-2 text-sm font-bold bg-black text-yellow-300 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition-colors duration-200"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        VIEW PROJECT
+                      </a>
+                    ) : (
+                      <span className="block w-full text-center mt-2 text-sm font-medium text-gray-600 bg-gray-100 px-4 py-2 rounded border border-gray-300 cursor-default">
+                        Code available upon request
+                      </span>
+                    )}
                   </div>
 
                 </div>
