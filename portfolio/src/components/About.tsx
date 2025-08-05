@@ -10,7 +10,7 @@ const FlipCard = ({ frontText, backItems }: { frontText: React.ReactNode; backIt
       onMouseEnter={() => setFlipped(true)}
       onMouseLeave={() => setFlipped(false)}
     >
-      <div className="relative w-full min-h-[6rem] overflow-hidden">
+      <div className="relative w-full min-h-[6rem] overflow-visible">
         <div
           className={`absolute inset-0 transition-transform duration-700 transform-style-preserve-3d ${
             flipped ? "rotate-y-180" : ""
