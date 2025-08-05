@@ -48,14 +48,14 @@ const About = () => {
 
       <div className="max-w-6xl mx-auto">
         {/* Centered Heading */}
-        <div className="inline-block border-7 bg-yellow-500 border-black px-4 py-2 mb-12 mx-auto max-w-xs sm:max-w-sm md:max-w-none -rotate-3 text-center">
+       <div className="inline-block border-7 bg-yellow-500 border-black px-6 sm:px-8 py-2 mb-12 mx-auto max-w-sm -rotate-2 text-center">
           <h2 className="text-4xl font-['Rubik_Mono_One'] tracking-wider">About Me</h2>
         </div>
 
       {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Text Box */}
-        <div className="border-4 border-black rounded-xl p-6 shadow-[6px_6px_0px_0px_black] bg-white max-w-prose w-full mx-auto text-left">
+        <div className="border-4 border-black rounded-xl px-6 py-8 sm:px-8 sm:py-10 shadow-[6px_6px_0px_0px_black] bg-white max-w-prose w-full mx-auto text-left">
           <p className="mb-4 text-base leading-relaxed">
             I'm Cathaír Rua Mac an Bheatha — a full stack developer with a passion for crafting
             responsive, interactive, and accessible web experiences.
