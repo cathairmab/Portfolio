@@ -66,7 +66,7 @@ const Projects = () => {
   React.useEffect(() => {
     if (!api) return;
 
-    setCount(api.scrollSnapList().length);
+    setCount(projects.length);
     setCurrent(api.selectedScrollSnap());
 
     const onSelect = () => {
@@ -142,7 +142,7 @@ const Projects = () => {
                     )}
                   </div>
                   <div className="block sm:hidden text-center text-sm mt-4 font-mono text-black">
-                    Slide {current + 1} of 5
+                    Slide {current + 1} of {count}
                   </div>
                 </div>
               </CarouselItem>
