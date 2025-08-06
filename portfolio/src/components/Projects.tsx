@@ -4,7 +4,9 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
+import React from "react";
 
 const projects = [
   {
@@ -57,6 +59,26 @@ const getRotationClass = (index: number) => {
 };
 
 const Projects = () => {
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+  const [count, setCount] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) return;
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap());
+
+    const onSelect = () => {
+      setCurrent(api.selectedScrollSnap());
+    };
+
+    api.on("select", onSelect);
+
+    return () => {
+      api.off("select", onSelect);
+    };
+  }, [api]);
   return (
     <section
       id="projects"
@@ -75,6 +97,7 @@ const Projects = () => {
         <Carousel
           opts={{ align: "start" }}
           className="w-full overflow-visible px-1"
+          setApi={setApi}
         >
           <CarouselContent className="px-2 py-10 sm:py-16">
             {projects.map((project, i) => (
@@ -118,14 +141,18 @@ const Projects = () => {
                       </span>
                     )}
                   </div>
-
+                  <div className="block sm:hidden text-center text-sm mt-4 font-mono text-black">
+                    Slide {current + 1} of 5
+                  </div>
                 </div>
               </CarouselItem>
+              
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="-left-10 text-yellow-300 bg-black hover:bg-yellow-400 hover:text-black" />
-          <CarouselNext className="-right-10 text-yellow-300 bg-black hover:bg-yellow-400 hover:text-black" />
+          <CarouselPrevious className="hidden sm:flex -left-10 text-yellow-300 bg-black hover:bg-yellow-400 hover:text-black" />
+          <CarouselNext className="hidden sm:flex -right-10 text-yellow-300 bg-black hover:bg-yellow-400 hover:text-black" />
+
         </Carousel>
       </div>
     </section>
